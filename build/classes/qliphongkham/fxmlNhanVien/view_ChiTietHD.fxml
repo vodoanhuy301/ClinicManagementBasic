@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vb" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="769.0" prefWidth="579.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qliphongkham.fxmlNhanVien.View_ChiTietHDController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="577.0" styleClass="title-lower">
+         <children>
+            <Label text="Hóa Đơn" textFill="#306bb9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="584.0" prefWidth="579.0" spacing="30.0">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <children>
+            <TextArea fx:id="tfChiTietHD" prefHeight="582.0" prefWidth="559.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <JFXButton onMouseClicked="#saveFileHD" prefHeight="33.0" prefWidth="149.0" styleClass="btn-all" text="Lưu" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onMouseClicked="#exitViewHD" prefHeight="33.0" prefWidth="149.0" styleClass="btn-all" text="Thoát" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

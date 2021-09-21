@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#drag" prefHeight="762.0" prefWidth="1080.0" style="-fx-background-color: #eeffff;" styleClass="parent" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qliphongkham.ChuController">
+   <children>
+      <VBox layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="290.0" spacing="10.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="42.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8_outline_48px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="224.0" styleClass="sidebar" text="Quản Lí Phòng Khám" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER_LEFT" onMouseClicked="#dichvu" prefHeight="0.0" prefWidth="290.0" styleClass="btn">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8_service_tips_64px_1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" text="Quản Lí Dịch Vụ Khám" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER_LEFT" onMouseClicked="#thuoc" prefHeight="0.0" prefWidth="290.0" styleClass="btn">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8_pill_bottle_64px.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" text="Quản Lí Thuốc" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER_LEFT" onMouseClicked="#hoadon" prefHeight="0.0" prefWidth="290.0" styleClass="btn">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8_bill_64px.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" text="Quản Lí Hóa Đơn" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER_LEFT" onMouseClicked="#khachhang" prefHeight="0.0" prefWidth="290.0" styleClass="btn">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8_customer_64px.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" text="Quản Lí Thông Tin Khách Hàng" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER_LEFT" onMouseClicked="#nhanvien" prefHeight="0.0" prefWidth="290.0" styleClass="btn">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8_front_desk_64px.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" text="Quản Lí Thông Tin Nhân Viên" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox fx:id="titleBar" alignment="CENTER_RIGHT" layoutY="-1.0" prefHeight="48.0" prefWidth="1080.0" styleClass="title" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="94.0" spacing="10.0">
+               <children>
+                  <ImageView id="iconMin" fx:id="mini" fitHeight="32.0" fitWidth="32.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true" styleClass="iconTitleBar">
+                     <image>
+                        <Image url="@icon/icons8_macos_minimize_64px_1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="iconX" fx:id="exit" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="iconTitleBar">
+                     <image>
+                        <Image url="@icon/icons8_macos_close_64px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox fx:id="logOut" alignment="CENTER" fillHeight="false" layoutY="705.0" onMouseClicked="#logOutEvent" prefHeight="57.0" prefWidth="290.0" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Label onMouseClicked="#logOutEvent" text="Đăng Xuất" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="32.0" onMouseClicked="#logOutEvent" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/icons8_logout_rounded_left_64px.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="sidebar" />
+            <String fx:value="btn" />
+         </styleClass>
+      </HBox>
+      <Label text="Quản Lí Phòng Khám (Admin)" textFill="#2154b2" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" top="12.0" />
+         </padding>
+      </Label>
+      <Pane fx:id="myPane" layoutX="290.0" layoutY="45.0" prefHeight="715.0" prefWidth="790.0" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

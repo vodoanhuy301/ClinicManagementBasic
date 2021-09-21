@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="715.0" prefWidth="790.0" spacing="20.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qliphongkham.fxmlChu.NhanvienController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="370.0" prefWidth="770.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" text="Nhân Viên" textFill="#306bb9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="33.0" prefWidth="746.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="tfSearch" prefHeight="33.0" prefWidth="250.0" promptText="Tìm Kiếm Nhân Viên">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton onMouseClicked="#searchEvent" prefHeight="33.0" prefWidth="118.0" styleClass="btn-login" stylesheets="@../css/style.css" text="Tìm Kiếm" textFill="#306bb9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onMouseClicked="#insertView" prefHeight="33.0" prefWidth="135.0" styleClass="btn-all" text="Thêm Nhân Viên" textFill="#306bb9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onMouseClicked="#reloadEvent" prefHeight="33.0" prefWidth="118.0" styleClass="btn-all" text="Tải lại" textFill="#306bb9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="tableNhanVien" editable="true" prefHeight="313.0" prefWidth="770.0" styleClass="table-cell">
+              <columns>
+                <TableColumn fx:id="idNV" prefWidth="123.0" styleClass="sttColumn" text="Mã NV" />
+                <TableColumn fx:id="hoTenNV" prefWidth="192.0" text="Họ Tên" />
+                  <TableColumn fx:id="ngaySinhNV" prefWidth="250.0" text="Ngày Sinh" />
+                  <TableColumn fx:id="sdtNV" prefWidth="204.0" text="Số điện thoại" />
+              </columns>
+            </TableView>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="317.0" prefWidth="770.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" text="Tài Khoản" textFill="#306bb9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="33.0" prefWidth="746.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="tfSearchTK" prefHeight="33.0" prefWidth="250.0" promptText="Tìm Kiếm Tài Khoản">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton onMouseClicked="#searchTKEvent" prefHeight="33.0" prefWidth="118.0" styleClass="btn-login" stylesheets="@../css/style.css" text="Tìm Kiếm" textFill="#306bb9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onMouseClicked="#insertTK" prefHeight="33.0" prefWidth="135.0" styleClass="btn-all" text="Thêm Tài Khoản" textFill="#306bb9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onMouseClicked="#reloadEvent" prefHeight="33.0" prefWidth="118.0" styleClass="btn-all" text="Tải lại" textFill="#306bb9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <TableView fx:id="tableTaiKhoan" prefHeight="197.0" prefWidth="770.0" styleClass="table-cell">
+               <columns>
+                  <TableColumn fx:id="idNV2" prefWidth="93.0" styleClass="sttColumn" text="Mã NV" />
+                  <TableColumn fx:id="tenTK" prefWidth="243.0" text="Tên Tài Khoản" />
+                  <TableColumn fx:id="mkTK" prefWidth="265.0" text="Mật Khẩu" />
+                  <TableColumn fx:id="quyenTK" prefWidth="168.0" text="Quyền Truy Cập" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</VBox>

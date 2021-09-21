@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="579.0" spacing="10.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qliphongkham.fxmlChu.Add_KhachHangController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="577.0" styleClass="title-lower">
+         <children>
+            <Label text="Thêm Khách Hàng" textFill="#306bb9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="579.0" spacing="30.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="118.0" text="Tên Khách Hàng :" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfTenKH">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="49.0" prefWidth="577.0" spacing="30.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="99.0" text="Số điện thoại :" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfSdtKH">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <JFXButton onMouseClicked="#insertEvent" prefHeight="33.0" prefWidth="149.0" styleClass="btn-all" text="Thêm Vào" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onMouseClicked="#deleteFormEvent" prefHeight="33.0" prefWidth="149.0" styleClass="btn-all" text="Xóa" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

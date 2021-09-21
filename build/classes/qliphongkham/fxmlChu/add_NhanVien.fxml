@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="579.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qliphongkham.fxmlChu.Add_NhanVienController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="577.0" styleClass="title-lower">
+         <children>
+            <Label text="Thêm Nhân Viên" textFill="#306bb9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="579.0" spacing="30.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="95.0" text="Họ và tên :" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfTenNV">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="83.0" prefWidth="322.0" spacing="10.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="210.0" text="Ngày Sinh( vd: 1997-12-31):" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfNgaySinhNV" alignment="CENTER" prefHeight="31.0" prefWidth="287.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="115.0" right="8.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="132.0" right="125.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="579.0" spacing="30.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="95.0" text="Số điện thoại :" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfSdtNV">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <JFXButton onMouseClicked="#insertNVEvent" prefHeight="33.0" prefWidth="149.0" styleClass="btn-all" text="Thêm Vào" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onMouseClicked="#deleteFormNVEvent" prefHeight="33.0" prefWidth="149.0" styleClass="btn-all" text="Xóa" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

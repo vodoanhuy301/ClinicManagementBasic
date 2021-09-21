@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="715.0" prefWidth="790.0" spacing="20.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qliphongkham.fxmlChu.TimHoaDonController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="709.0" spacing="20.0">
+         <children>
+            <TextField fx:id="tfSearchHD" prefHeight="39.0" prefWidth="243.0" promptText="Tìm Kiếm Hóa Đơn (Mã KH)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnSearch1" onMouseClicked="#searchHD" prefHeight="33.0" prefWidth="84.0" styleClass="btn-all" text="Tìm Kiếm" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnReload1" alignment="CENTER" onMouseClicked="#reloadHDEvent" prefHeight="33.0" prefWidth="64.0" styleClass="btn-all" text="Tải lại" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnTaoHoaDonMenu" onMouseClicked="#taoHoaDonMenu" prefHeight="39.0" prefWidth="148.0" styleClass="btn-all" text="Tạo Hóa Đơn" textFill="#306bb9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="547.0" prefWidth="790.0">
+         <children>
+            <TableView fx:id="HoaDonTable" prefHeight="552.0" prefWidth="768.0">
+               <columns>
+                  <TableColumn fx:id="maHD" prefWidth="60.0" styleClass="sttColumn" text="Mã HĐ" />
+                  <TableColumn fx:id="maNV" prefWidth="92.0" styleClass="sttColumn" text="Mã NV" />
+                  <TableColumn fx:id="maKH" prefWidth="97.0" styleClass="sttColumn" text="Mã KH" />
+                  <TableColumn fx:id="ngayMua" prefWidth="244.0" sortType="DESCENDING" styleClass="giaColumn" text="Ngày Mua" />
+                  <TableColumn fx:id="tongTien" prefWidth="203.0" styleClass="giaColumn" text="Tổng Tiền" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="709.0" spacing="20.0">
+         <children>
+            <TextField fx:id="tfSearchHD1" prefHeight="39.0" prefWidth="243.0" promptText="Mã Hóa Đơn">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnSearch11" onMouseClicked="#searchChiTietHD" prefHeight="33.0" prefWidth="127.0" styleClass="btn-all" text="Xem Hóa Đơn" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="790.0" spacing="10.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qliphongkham.fxmlNhanVien.HoadonController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="770.0">
+         <children>
+            <Label text="Tạo Hóa Đơn Thuốc" textFill="#306bb9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="709.0" spacing="20.0">
+         <children>
+            <TextField fx:id="tfSearchThuoc" prefHeight="39.0" prefWidth="254.0" promptText="Tìm Kiếm Mặt Hàng">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnSearch" onMouseClicked="#searchThuoc" prefHeight="33.0" prefWidth="84.0" styleClass="btn-all" text="Tìm Kiếm" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnReload" alignment="CENTER" onMouseClicked="#reloadThuocEvent" prefHeight="33.0" prefWidth="64.0" styleClass="btn-all" text="Tải lại" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAdd1" onMouseClicked="#addHoaDon" prefHeight="33.0" prefWidth="133.0" styleClass="btn-all" text="Thêm Hóa Đơn" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnXemHD" onMouseClicked="#xemChiTietHoaDon" prefHeight="33.0" prefWidth="133.0" styleClass="btn-all" text="In chi tiết HĐ" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox prefHeight="251.0" prefWidth="770.0">
+         <children>
+            <TableView fx:id="matHangThuoc" prefHeight="171.0" prefWidth="770.0">
+              <columns>
+                <TableColumn fx:id="maThuoc" prefWidth="68.0" styleClass="sttColumn" text="Mã Thuốc" />
+                <TableColumn fx:id="tenThuoc" prefWidth="277.0" text="Tên Thuốc" />
+                  <TableColumn fx:id="giaThuoc" minWidth="0.0" prefWidth="131.0" styleClass="giaColumn" text="Giá Thuốc" />
+                  <TableColumn fx:id="soLuong" prefWidth="82.0" styleClass="giaColumn" text="Số Lượng" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="770.0">
+         <children>
+            <Label text="Tạo Hóa Đơn Dịch Vụ" textFill="#306bb9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="20.0" layoutY="223.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="709.0" spacing="20.0">
+         <children>
+            <TextField fx:id="tfSearchDV" prefHeight="39.0" prefWidth="254.0" promptText="Tìm Kiếm Mặt Hàng">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnSearch1" onMouseClicked="#searchDV" prefHeight="33.0" prefWidth="84.0" styleClass="btn-all" text="Tìm Kiếm" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnReload1" alignment="CENTER" onMouseClicked="#reloadDVEvent" prefHeight="33.0" prefWidth="64.0" styleClass="btn-all" text="Tải lại" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAdd11" onMouseClicked="#addHoaDonDV" prefHeight="33.0" prefWidth="133.0" styleClass="btn-all" text="Thêm Hóa Đơn" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnXemHD1" onMouseClicked="#xemChiTietHoaDonDV" prefHeight="33.0" prefWidth="133.0" styleClass="btn-all" text="In chi tiết HĐ" textFill="#306bb9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="272.0" prefHeight="251.0" prefWidth="770.0">
+         <children>
+            <TableView fx:id="matHangDV" prefHeight="171.0" prefWidth="770.0">
+               <columns>
+                  <TableColumn fx:id="maDichVu" prefWidth="68.0" styleClass="sttColumn" text="Mã DV" />
+                  <TableColumn fx:id="tenDichVu" prefWidth="205.0" text="Tên Dịch Vụ" />
+                  <TableColumn fx:id="giaDichVu" minWidth="0.0" prefWidth="139.0" styleClass="giaColumn" text="Giá DV" />
+                  <TableColumn fx:id="ghiChu" minWidth="0.0" prefWidth="114.0" styleClass="giaColumn" text="Ghi Chú" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+   </padding>
+</VBox>

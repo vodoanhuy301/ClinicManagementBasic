@@ -1,0 +1,90 @@
+*/mauchu là#306bb9
+//432 579 khung add
+
+.parent{
+    -fx-background-color:#c3fdff;
+}
+.sidebar{
+    -fx-background-color:#5d99c6;
+}
+.title{
+    -fx-background-color:#90caf9;
+}
+.title-lower{
+    -fx-background-color:#abd9f4;
+}
+.btn{
+    -fx-background-color:transparent;
+}
+.btn-login{
+    -fx-border-color: #2286c3;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-background-color:transparent;
+}
+.btn-login:pressed{
+    -fx-background-color:#abd9f4;
+}
+.btn-all{
+    -fx-border-color: #2286c3;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-background-color:transparent;
+}
+.btn-all:pressed{
+    -fx-background-color:#8eb3e4;
+}
+.btn:hover{
+    -fx-background-color:#2286c3;
+    -fx-cursor:hand;
+}
+.btn:pressed{
+    -fx-background-color:#2286c3;
+    -fx-cursor:hand;
+}
+.inputText{
+    -fx-text-fill:white;
+}
+.iconTitleBar:hover{
+    -fx-cursor:hand;
+
+}
+#iconX:hover{
+        -fx-image: url("../icon/icons8_macos_close_64px_2.png");
+        -fx-cursor:hand;
+}
+#iconMax:hover{
+        -fx-image: url("../icon/icons8_macos_full_screen_64px_2.png");
+        -fx-cursor:hand;
+}
+#iconMin:hover{
+        -fx-image: url("../icon/icons8_macos_minimize_64px_2.png");
+        -fx-cursor:hand;
+}
+#iconX{
+    -fx-image: url("../icon/icons8_macos_close_64px_1.png");
+}
+#iconMax{
+     -fx-image: url("../icon/icons8_macos_full_screen_64px_1.png");
+}
+#iconMin{
+    -fx-image: url("../icon/icons8_macos_minimize_64px_1.png");
+}
+.inside{
+    -fx-background-color:#dbe5f2;
+}
+.table-view .table-cell{
+    -fx-font-size:15px;
+
+}
+.image-view-wrapper:border {
+    -fx-border-color: #2286c3;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+}
+.giaColumn{
+    -fx-alignment: BASELINE_RIGHT; 
+}
+.sttColumn{
+    -fx-alignment:CENTER;
+}
